@@ -1,12 +1,11 @@
 package exercise;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.List;                             // Test, BeforeAll, BeforeEach, AfterEach
 
-import org.junit.jupiter.api.*;                             // Test, BeforeAll, BeforeEach, AfterEach
-import org.junit.jupiter.api.extension.ExtendWith;
-import static org.junit.jupiter.api.Assertions.*;           // assertEquals, assertTrue
-import static org.assertj.core.api.Assertions.assertThat;   // assertThat
-import static org.assertj.core.api.Assertions.withPrecision;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.withPrecision;           // assertEquals, assertTrue
+import org.junit.jupiter.api.Test;   // assertThat
 
 public class AssertJTest {
     @Test
@@ -16,6 +15,8 @@ public class AssertJTest {
         assertThat(1+2).isGreaterThanOrEqualTo(3);
         assertThat(1+2).isBetween(1, 3);
         assertThat(1+2).isNotNegative();
+
+        assertThat("Hello World").isEqualTo("Hello " + "World");
     }
 
     @Test

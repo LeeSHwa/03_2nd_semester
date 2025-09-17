@@ -1,10 +1,14 @@
 package exercise;
 
-import java.util.*;
+import java.util.List;
 
-import org.junit.jupiter.api.*;                             // Test, BeforeAll, BeforeEach, AfterEach
-import org.junit.jupiter.api.extension.ExtendWith;
-import static org.junit.jupiter.api.Assertions.*;           // assertEquals, assertTrue
+import org.junit.jupiter.api.AfterAll;                             // Test, BeforeAll, BeforeEach, AfterEach
+import org.junit.jupiter.api.AfterEach;
+import static org.junit.jupiter.api.Assertions.assertEquals;           // assertEquals, assertTrue
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class JUnitTest {
     @BeforeAll
@@ -33,7 +37,7 @@ public class JUnitTest {
 
     @Test
     public void testOne() {
-        System.out.println("@Test tesetOne()");
+        System.out.println("@Test testOne()");
 
         assertEquals(3, 1 + 2);
     }
@@ -44,5 +48,12 @@ public class JUnitTest {
 
         List<Integer> numbers = List.of(1,2,3);
         assertNotNull(numbers);
+    }
+    
+    @Test
+    public void stringCmp() {
+        System.out.println("@Test stringCmp()");
+        
+        assertEquals("Hello, World", "Hello" + ", " + "World");
     }
 }

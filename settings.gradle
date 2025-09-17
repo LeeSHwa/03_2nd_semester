@@ -12,3 +12,4 @@ plugins {
 
 rootProject.name = '03_2nd_semester'
 include('app')
+include('ex01')
