@@ -180,5 +180,13 @@ allprojects {
     mainClass = 'com.oreilly.hh.AlbumTest'
     classpath = sourceSets.main.runtimeClasspath
   }
+
+dependencies {
+    // implementation 'com.h2database:h2:...' // 이 줄을 주석 처리하거나 삭제
+    implementation 'org.xerial:sqlite-jdbc:3.45.1.0' // 이 줄을 추가
+
+    // 나머지 hibernate-core 등은 그대로 둡니다.
+}
+
 }
 

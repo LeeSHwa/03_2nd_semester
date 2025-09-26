@@ -27,6 +27,11 @@
 
     <!-- List all the entities we're using -->
     <mapping class="com.oreilly.hh.data.Track" />
+    <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+    <property name="hibernate.connection.url">jdbc:sqlite:music.db</property>
+    <property name="hibernate.connection.username"></property>
+    <property name="hibernate.connection.password"></property>
+    <property name="hibernate.dialect">org.hibernate.community.dialect.SQLiteDialect</property>
 
   </session-factory>
 </hibernate-configuration>
