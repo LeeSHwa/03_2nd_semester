@@ -18,18 +18,18 @@ public class CreateTest {
             tx.begin();
 
             var track = new Track("Russian Trance",
-                                  "vol2/album610/track02.mp3",
-                                  LocalTime.of(00,03,30));
+                                "vol2/album610/track02.mp3",
+                                LocalTime.of(00,03,30));
             em.persist(track);
 
             track = new Track("Video Killed the Radio Star",
-                              "vol2/album611/track12.mp3",
-                              LocalTime.of(00,03,49));
+                            "vol2/album611/track12.mp3",
+                            LocalTime.of(00,03,49));
             em.persist(track);
 
             track = new Track("Gravity's Angel",
-                              "vol2/album175/track03.mp3",
-                              LocalTime.of(00,06,06));
+                            "vol2/album175/track03.mp3",
+                            LocalTime.of(00,06,06));
             em.persist(track);
 
             tx.commit();
