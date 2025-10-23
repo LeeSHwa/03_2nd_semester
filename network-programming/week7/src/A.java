@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
-public class App {
+public class A {
 public static void main(String[] args) {
 
 		
