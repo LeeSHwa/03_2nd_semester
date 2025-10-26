@@ -38,7 +38,8 @@ public class DigestThread implements Runnable {
     }
 
     public static void main(String[] args) {
-        String[] temp = { "data.txt", "data.bin" };
+        String[] temp = { "network-programming/week7/src/data.txt", 
+        "network-programming/week7/src/data.bin" };
         for (String filename : temp) {
             DigestThread dr = new DigestThread(filename);
             Thread t = new Thread(dr);
