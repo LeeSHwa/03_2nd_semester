@@ -17,3 +17,6 @@
 
 # VS Code settings
 .vscode/
+
+# image
+*.jpg
