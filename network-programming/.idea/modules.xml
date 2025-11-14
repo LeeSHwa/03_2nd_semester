@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/assignment5/assignment5.iml" filepath="$PROJECT_DIR$/assignment5/assignment5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assignment6/assignment6.iml" filepath="$PROJECT_DIR$/assignment6/assignment6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assignment7/assignment7.iml" filepath="$PROJECT_DIR$/assignment7/assignment7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/assignment8/assignment8.iml" filepath="$PROJECT_DIR$/assignment8/assignment8.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/network-programming.iml" filepath="$PROJECT_DIR$/.idea/network-programming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/untitled/untitled.iml" filepath="$PROJECT_DIR$/untitled/untitled.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week10/week10.iml" filepath="$PROJECT_DIR$/week10/week10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week6/week6.iml" filepath="$PROJECT_DIR$/week6/week6.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week7/week7.iml" filepath="$PROJECT_DIR$/week7/week7.iml" />
+      <module fileurl="file://$PROJECT_DIR$/week8/week8.iml" filepath="$PROJECT_DIR$/week8/week8.iml" />
+    </modules>
+  </component>
+</project>
