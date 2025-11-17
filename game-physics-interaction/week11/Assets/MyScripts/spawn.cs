@@ -11,7 +11,7 @@ public class spawn : MonoBehaviour
     {
         while (true)
         {
-            Instantiate(pf_wall, transform.position + Vector3.up * Random.Range(-2f, 3f), transform.rotation);
+            Instantiate(pf_wall, transform.position + Vector3.up * Random.Range(-2, 4), transform.rotation);
             yield return new WaitForSeconds(Random.Range(1.0f, 2.0f));
         }
     }

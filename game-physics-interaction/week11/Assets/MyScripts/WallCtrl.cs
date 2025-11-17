@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class WallCtrl : MonoBehaviour
 {
     public float speed;
-    private Renderer cubeRenderer;
+    private Renderer[] cubeRenderer;
+    Color ColorBySpeed;
+
 
     private void Awake()
     {
-        cubeRenderer = GetComponentInChildren<Renderer>();
+        cubeRenderer = GetComponentsInChildren<Renderer>();
     }
 
     private void Start()
@@ -18,18 +20,26 @@ public class WallCtrl : MonoBehaviour
 
         int random_Speed = Random.Range(-6, -3);
 
+
         switch (random_Speed)
         {
             case -6:
-                cubeRenderer.material.color = Color.red;
+                ColorBySpeed = Color.red;
                 break;
             case -5:
-                cubeRenderer.material.color = Color.green;
+                ColorBySpeed = Color.green;
                 break;
             case -4:
-                cubeRenderer.material.color = Color.blue;
+                ColorBySpeed = Color.blue;
                 break;
         }
+
+        foreach (Renderer rend in cubeRenderer)
+        {
+
+            rend.material.color = ColorBySpeed;
+        }
+
         speed = random_Speed;
 
         Destroy(this.gameObject, 5.0f);

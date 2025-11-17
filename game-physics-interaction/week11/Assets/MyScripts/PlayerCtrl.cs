@@ -3,11 +3,11 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCtrl : MonoBehaviour
 {
-    public float jump_power = 10;
+    public int jump_power;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
-        int random_jump = Random.Range(5, 8);
+        int random_jump = Random.Range(5, 9);
         jump_power = random_jump;
     }
 
