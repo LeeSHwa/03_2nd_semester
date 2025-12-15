@@ -14,11 +14,6 @@ public class EchoServer {
 
     public static void main(String[] args) {
         int port = DEFAULT_PORT;
-        /* try {
-          port = Integer.parseInt(args[0]);
-        } catch (RuntimeException ex) {
-          port = DEFAULT_PORT;
-        } */
 
         System.out.println("Listening for connections on port " + port);
 
@@ -27,13 +22,17 @@ public class EchoServer {
 
         try {
             serverChannel = ServerSocketChannel.open();
+
             ServerSocket ss = serverChannel.socket();
+
             InetSocketAddress address = new InetSocketAddress(port);
+
             ss.bind(address);
 
             serverChannel.configureBlocking(false);
             selector = Selector.open();
             serverChannel.register(selector, SelectionKey.OP_ACCEPT);
+
         } catch (IOException ex) {
             ex.printStackTrace();
             return;
